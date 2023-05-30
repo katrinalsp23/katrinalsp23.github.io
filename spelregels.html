@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home</title>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="container">
+      <img src="img/logo.png" alt="logo" class="logo">
+      <div class="menuicon" id="nav-toggle"></div>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="spelregels.html">Spelregels</a></li>
+      <li><a href="thema.html">Thema</a></li>
+      <li><a href="rmo.html">RMO</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<!-- ik gebruik hier een div, om de twee secties met elkaar te wrappen, zodat ik ze met grid naast elkaar kan zetten-->
+<div class="wrapper">
+  <section>
+      <article>
+        <h2>Het spel</h2>
+        <p>Je bent een boer in de Nijl die gewassen moet verzamelen en oogsten en tegen de andere boeren strijdt. De gewassen die je moet verzamelen zijn papyrus, graan, gerst en slakroppen. De gewassen kan je verzamelen door op het vlak te staan waar dat gewas is afgebeeld.  Vervolgens mag je die op je eigen akker neerzetten. Elke ronde vindt er een gebeurtenis plaats. De god Hapi laat de Nijl overstromen of er vindt een droogteval plaats. Wanneer de Nijl overstroomt mag je een van je verzamelde gewassen gaan oogsten (en op het oogst-vakje op je boerderij neerzetten). Wanneer er een droogteval plaatsvindt, wordt er verteld welk gewas je moet inleveren. Dit kan je voorkomen door goed je gewassen beschermen! Je kan je gewassen beschermen door kanalen te kopen of door een offer te maken aan de Godin Satet (wanneer je op haar vakje staat). De boer die als eerste alle 4 de gewassen heeft verzameld, heeft het spel gewonnen mag naar de boot gaan die je naar de handelsmarkt brengt. </p>
+        <figure>
+          <img src="img/spelspecificaties.png" alt="Spelspecificaties" class="gamespecifications">
+        </figure>
+      </article>
+      <article>
+      <h2>Demonstratie video</h2>
+      <!-- iframe repsonsive maken -->
+      <div class="iframe-video-container">
+        <iframe class="responsive-iframe-video" src="https://www.youtube.com/embed/98jzfHNLLqU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </article>
+  </section>
+  <section>
+    <h2>Spelregels</h2>
+    <ol>
+      <li>Elke ronde mag je met de dobbelsteen gooien. De dobbelsteen bepaalt hoeveel stappen je vooruit mag zetten. </li>
+      <li>Je mag niet achteruitlopen.</li>
+      <li>Wanneer er een overstroming van de Nijl plaatsvindt, mag je een van je verzamelde gewassen gaan oogsten.</li>
+      <li>Wanneer er een droogteval plaatsvindt, wordt er verteld welke gewas die ronde niet geoogst kan worden. Als jij dat gewas hebt moet je die inleveren, tenzij je dat gewas hebt beschermd.</li>
+      <li>Je kan je gewas beschermen door een kanaal te kopen voor 2 fiches. Je hoeft dan nooit je gewas in te leveren.  </li>
+      <li>Je kan op het vlak bij het vlak van Satet staan. Je kan dan ervoor kiezen om 1 fiche op te offeren. Al jouw gewassen zijn dan de komende 2 beurten beschermd.</li>
+      <li>Wanneer je je gewas succesvol hebt geoogst, krijg je 1 fiche.</li>
+      <li>Om het Rad van Fortuin uit te proberen, moet je 1 fiche inleveren of op het Rad van Fortuin vakje staan.</li>
+      <li>Wanneer je op het Farao vakje staat, moet je 1 fiché inleveren (als belasting).</li>
+      <li>Wanneer je op het dief vakje staat, mag je één fiché afpakken van een andere speler (je mag zelf kiezen wie).</li>
+      <li>Wanneer je op het gewas-naar-keuze vakje staat, mag je een zelfgekozen gewas pakken.</li>
+      <li>De speler die als eerste alle 4 de gewassen heeft ingeleverd, heeft het spel gewonnen en mag naar de boot gaan.</li>
+    </ol>
+  </section>
+</div>
+<section>
+  <h2>Betekenis Iconen op het bordspel</h2>
+  <article class="display-grid">
+      <article class="grid-item">
+        <figure class="nested-grid">
+          <img src="img/iconen/papyrus.png" alt="Papyrus">
+        </figure>
+        <div class="container-text">
+          <h3>Papyrus</h3>
+          <p>Wanneer je op dit icoontje staat, mag je papyrus op je boerderij neerleggen. Let op: dit mag alleen als je nog geen papyrus hebt.</p>
+        </div>
+      </article>
+      <article class="grid-item">
+        <figure class="nested-grid">
+          <img src="img/iconen/graan.png" alt="Graan">
+        </figure>
+        <div class="container-text">
+          <h3>Graan</h3>
+          <p>Wanneer je op dit icoontje staat, mag je graan op je boerderij neerleggen. Let op: dit mag alleen als je nog geen graan hebt.</p>
+        </div>
+      </article>
+      <article class="grid-item">
+        <figure class="nested-grid">
+          <img src="img/iconen/slakrop.png" alt="Slakrop">
+        </figure>
+        <div class="container-text">
+          <h3>Slakrop</h3>
+          <p>Wanneer je op dit icoonetje staat, mag je slakrop op je boerderij neerleggen. Let op: dit mag alleen als je nog geen slakrop hebt</p>
+        </div>
+      </article>
+      <article class="grid-item">
+        <figure class="nested-grid">
+          <img src="img/iconen/gerst.png" alt="Gerst">
+        </figure>
+        <div class="container-text">
+          <h3>Gerst</h3>
+          <p>Wanneer je op dit icoontje staat, mag je gerst op je boerderij neerleggen. Let op: dit mag alleen als je nog geen gerst hebt</p>
+        </div>
+      </article>
+      <article class="grid-item">
+        <figure class="nested-grid">
+          <img src="img/iconen/gewasnaarkeuze.png" alt="Gewas naar keuze">
+        </figure>
+        <div class="container-text">
+          <h3>Gewas naar keuze</h3>
+          <p>Wanneer je op dit icoontje staat, mag je een gewas uitkiezen en die op je boerderij neerleggen</p>
+        </div>
+      </article>
+      <article class="grid-item">
+        <figure class="nested-grid">
+          <img src="img/iconen/satet.png" alt="Satet">
+        </figure>
+        <div class="container-text">
+          <h3>Satet</h3>
+          <p>Wanneer je op dit icoontje staat, kan je 1 fiché op te offeren aan de Goddin Satet. Als je besluit om dit te doen, wordt je de komende 2 beurten beschermd</p>
+        </div>
+      </article>
+      <article class="grid-item">
+        <figure class="nested-grid">
+          <img src="img/iconen/radvanfortuin.png" alt="Rad van Fortuin">
+        </figure>
+        <div class="container-text">
+          <h3>Rad van Fortuin</h3>
+          <p> Wanneer je op dit icoontje staat, mag je de Rad van Fortuin uitproberen. Je mag ook de Rad van Fortuin uitproberen wanneer je 1 fiché inlevert.</p>
+        </div>
+      </article>
+      <article class="grid-item">
+        <figure class="nested-grid">
+          <img src="img/iconen/dief.png" alt="Dief">
+        </figure>
+        <div class="container-text">
+          <h3>Dief</h3>
+          <p>Wanneer je op dit icoontje staat, mag je 1 fiché van iemand afpakken. Je mag zelf bepallen wie.</p>
+        </div>
+      </article>
+      <article class="grid-item">
+        <figure class="nested-grid">
+          <img src="img/iconen/farao.png" alt="Farao">
+        </figure>
+        <div class="container-text">
+          <h3>Farao</h3>
+          <p>Wanneer je op dit icoontje staat, moet je 1 fiché aan de Farao geven wegens belasting</p>
+        </div>
+      </article>
+    </article>
+  </section>
+</main>
+<script src ="js/main.js"></script>
+</body>
+</html>

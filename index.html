@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home</title>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="container">
+      <img src="img/logo.png" alt="logo" class="logo">
+      <div class="menuicon" id="nav-toggle"></div>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="spelregels.html">Spelregels</a></li>
+      <li><a href="thema.html">Thema</a></li>
+      <li><a href="rmo.html">RMO</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+  </nav>
+  <!-- Ik gebruik hier in div, zodat ik de h1 tag en p tag bij elkaar kan wrappen en samen kan stylen -->
+    <div class="introduction">
+        <h1 class="intro-title">Welkom</h1>
+        <p class="intro-text">Ontdek de wonderen van de Nijl</p>
+    </div>
+</header>
+<main>
+<section>
+  <article>
+    <p>Welkom op boerenvandenijl.nl! Wat fijn dat je meer wilt weten over mijn bordspel! Op deze website kan je allerlei informatie vinden over het bordspel “Boeren van de Nijl” en de thema’s die daar naar voren zijn gekomen, zoals de Nijl en landbouw in Oud-Egypte. Daarnaast heb je ook nog de mogelijkheid om het bordspel te bestellen.</p>
+  </article>
+  <article>
+    <h2>Doel van deze website</h2>
+    <p class="intro">Het doel van deze website is om jou meer te laten leren over de rivier de Nijl en landbouw in Egypte. In het bordspel is dit al naar voren gekomen, maar op deze website kan je deze thema’s nog verder ontdekken! Ook kan je hier de spelregels van het bordspel nog even doornemen. Bovendien kan je een quiz doen om jouw kennis over Oud-Egypte te testen (Let op: hiervoor heb je de code nodig die je tijdens het spelen van het bordspel hebt gekregen.</p>
+  </article>
+  <article>
+    <h2>Wat kan je allemaal op deze website vinden</h2>
+    <p>Op deze website kan je: </p>
+    <ul>
+      <li>Meer informatie krijgen over de rivier de Nijl en de landbouw in Oud-Egypte.</li>
+      <li>De spelregels van het bordspel “Boeren van de Nijl” bekijken.</li>
+      <li>Een Quiz maken waarmee je je kennis over Oud-Egypte kan testen. </li>
+      <li>Lezen over het Rijksmuseum van Oudheden en wat je allemaal in hun museum kan doen. </li>
+    </ul>
+  </article>
+</section>
+<section class="orderform">
+  <h2>Bestel het bordspel</h2>
+  <form action="#" method="post">
+    <label class="required">
+      Voornaam<br />
+      <input type="text" name="voornaam" placeholder="Type hier je voornaam in" required/>
+    </label>
+    <br />
+    <label class="required">
+      Achternaam<br />
+      <input type="text" name="achternaam" placeholder="Voer hier je achternaam in" required/>
+   </label>
+   <br />
+   <label class="required">
+     E-mail <br/>
+     <input type="email" name="email" placeholder="Voer hier je email in" required/>
+   </label>
+   <br />
+   <label class="required">
+     Telefoonnummer<br/>
+     <input type="tel" name="phone" placeholder="Voer hier je telefoonnummer in" required/>
+   </label>
+   <br />
+  <input type="submit" class="sendorder"/>
+ </form>
+</section>
+</main>
+<script src ="js/main.js"></script>
+</body>
+</html>

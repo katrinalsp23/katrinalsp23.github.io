@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home</title>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="container">
+      <img src="img/logo.png" alt="logo" class="logo">
+      <div class="menuicon" id="nav-toggle"></div>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="spelregels.html">Spelregels</a></li>
+      <li><a href="thema.html">Thema</a></li>
+      <li><a href="rmo.html">RMO</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+    </nav>
+    <h1 class="quiz-title">Quiz</h1>
+</header>
+<main>
+<section>
+    <p>Wil jij graag je kennis testen over de Nijl en landbouw in Oud-Egypte? Maak dan de quiz die dit test. Het is misschien handig om eerst nog wat meer te lezen over de Nijl en landbouw in Oud-Egypte op de <a href="thema.html">thema</a> pagina.  Wanneer je dat hebt gedaan, kan je hier de code invoeren die je hebt gekregen tijdens het spelen van het bordspel. Met deze code kan je de quiz gaan maken. Wie weet ben jij een echte Oud-Egypte expert…</p>
+    <div class="codebarWrapper" id="js--codebar">
+      <input type="text" class="codebar" id="codebar" placeholder="Type hier de code in">
+    </div>
+</section>
+<section class="quiz">
+<form id="quiz-form" name="quiz" class="quiz-form" action="#" method="post">
+  <h2>Quiz</h2>
+  <fieldset class="questions-wrapper">
+    <p class="questions">Wat is de Nijl? </p>
+    <input type="radio" class="mc" name="question1" value="rivier">Een rivier <br />
+    <input type="radio" class="mc" name = "question1" value="ocean">Een oceaan <br />
+    <input type="radio" class="mc" name="question1" value="stad">Een stad<br />
+  </fieldset>
+  <fieldset class="questions-wrapper">
+    <p class="questions">Wie was de god Hapi? </p>
+    <input type="radio" class="mc" name="question2" value="onderwereld">Hij was de god van het dodenrijk<br />
+    <input type="radio" class="mc" name="question2" value="nijl">Hij was de god van de Nijl<br />
+    <input type="radio" class="mc" name="question2" value="zon">Hij was de god van de zon <br />
+  </fieldset>
+  <fieldset class="questions-wrapper">
+    <p class="questions">Hoe lang is de nijl in kilometers </p>
+    <input type="radio" class="mc" name="question3" value="200">200 kilometer<br />
+    <input type="radio" class="mc" name="question3" value="6650">6650 kilometer<br />
+    <input type="radio" class="mc" name="question3" value="18900">18900 kilometer <br />
+  </fieldset>
+  <fieldset class="questions-wrapper">
+    <p class="questions">Welke godin beschermde de Nijl volgens de Egyptenaren </p>
+    <input type="radio" class="mc" name="question4" value="satet">Satet<br />
+    <input type="radio" class="mc" name="question4" value="isis">Isis<br />
+    <input type="radio" class="mc" name="question4" value="hathor">Hathor<br />
+  </fieldset>
+  <fieldset class="questions-wrapper">
+    <p class = "questions">Wat was het belangrijkste gewas in Oud-Egypte?</p>
+    <input type="radio" class="mc" name="question6" value="papyrus">Papyrus <br />
+    <input type="radio" class="mc" name="question6" value="gerst">Gerst<br />
+    <input type="radio" class="mc" name="question6" value="graan">Graan<br />
+  </fieldset>
+  <fieldset class="questions-wrapper">
+    <p class = "questions">In welk continent ligt de Nijl?</p>
+    <input type="radio" class="mc" name="question5" value="afrika">Afrika<br />
+    <input type="radio" class="mc" name="question5" value="europa">Europa<br />
+    <input type="radio" class="mc" name="question5" value="azie">Azië<br />
+  </fieldset>
+  <fieldset class="questions-wrapper">
+     <p class="questions">Waarom was landbouw mogelijk in Oud-Egypte</p>
+     <input type="radio" class="mc" name="question7" value="regen">Het regende in Oud-Egypte<br />
+     <input type="radio" class="mc" name="question7" value="overstroming">Door de overstroming van de Nijl<br />
+     <input type="radio" class="mc" name="question7" value="goden">De goden maakten dit mogelijk<br />
+   </fieldset>
+   <fieldset class="questions-wrapper">
+     <p class = "questions">Wanneer overstroomde de Nijl</p>
+     <input type="radio" class="mc" name="question8" value="zomer">Juni tot september<br />
+     <input type="radio" class="mc" name="question8" value="herfst">Oktober tot februari<br />
+     <input type="radio" class="mc" name="question8" value="lente">Maart tot mei<br />
+   </fieldset>
+   <fieldset class="questions-wrapper">
+     <p class = "questions">Wanneer begon het zaaiseizoen?</p>
+     <input type="radio" class="mc" name="question9" value="juli">In juli<br />
+     <input type="radio" class="mc" name="question9" value="maart">In maart<br />
+     <input type="radio" class="mc" name="question9" value="oktober">In oktober<br />
+   </fieldset>
+   <fieldset class="questions-wrapper">
+     <p class ="questions">Hoe noemde de Egyptenaren het overstromingsseizoen? </p>
+     <input type="radio" class="mc" name="question10" value="shemu">Shemu <br />
+     <input type="radio" class="mc" name="question10" value="peret">Peret <br />
+     <input type="radio" class="mc" name="question10" value="ahket">Ahket<br />
+   </fieldset>
+   <button class="submit" type="button" onclick="check();">Ik ben klaar!</button>
+ </form>
+</section>
+<!-- Modal pop up nadat je de quiz heb gemaakt -->
+  <div class="modal-overlay" id="modal">
+    <div class="modalcontent">
+      <a class="closebtn" id="closing">X</a>
+      <div class="modalbody">
+        <p id ="number-correct"></p>
+        <p id="message"></p>
+      </div>
+   </div>
+ </div>
+</main>
+<script src ="js/quizvragen.js"></script>
+<script src ="js/main.js"></script>
+</body>
+</html>
